@@ -30,7 +30,6 @@ export class CarsController {
   }
 
   @Post()
-  @UsePipes(ValidationPipe)
   createCart(@Body() CreateCartDto: CreateCartDto) {
     return CreateCartDto;
   }
